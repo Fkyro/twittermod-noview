@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.media.ui.image.UserImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:userImageSize="mini" />
+    <com.twitter.media.ui.image.UserImageView android:visibility="gone" app:userImageSize="mini" style="@style/SocialProofFacepile" />
+    <com.twitter.media.ui.image.UserImageView android:visibility="gone" app:userImageSize="mini" style="@style/SocialProofFacepile" />
+</LinearLayout>

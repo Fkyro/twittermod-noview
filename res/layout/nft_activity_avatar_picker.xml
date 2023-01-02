@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/nft_activity_avatar_picker_container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.nft.avatarpicker.NFTAvatarHexOverlay android:id="@id/nft_picker_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textStyle="bold" android:textColor="@color/white" android:id="@id/nft_picker_done" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8" android:text="@string/done" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="@color/white" android:id="@id/nft_picker_cancel" android:padding="@dimen/space_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_8" android:text="@string/cancel" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <tag android:value="NFTPickerAvatarActivity" android:id="@id/weaverComponent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

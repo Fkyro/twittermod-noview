@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.view.TimelineRecyclerView android:id="@id/recycler_view" android:paddingLeft="?timelineRowHorizontalPadding" android:paddingTop="?timelineRowVerticalPadding" android:paddingRight="?timelineRowHorizontalPadding" android:paddingBottom="?timelineRowVerticalPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/topic_carousel_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

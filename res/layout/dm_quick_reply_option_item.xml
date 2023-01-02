@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListRow.DMQuickReplyOption"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textStyle="bold" android:textColor="@color/dm_quick_reply_option_text" android:ellipsize="end" android:id="@id/text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="@color/dm_quick_reply_option_description" android:ellipsize="end" android:id="@id/description" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

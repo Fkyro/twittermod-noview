@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/moments_cta_pivot_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="?coreColorBorder" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/MomentsGuideItem.CTA">
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/moments_text_size_medium_large" android:textColor="?coreColorSecondaryText" android:id="@id/moments_cta_pivot_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/moments_standard_spacing_half" style="@style/MomentsGuideText.Primary" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/moments_cta_video_pivot_badge" style="@style/MomentsGuideText.InfoBadge.CTA" />
+        <android.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moments_chevron_play" android:contentDescription="@null" app:tint="?coreColorSecondaryText" />
+    </LinearLayout>
+</LinearLayout>

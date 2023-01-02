@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="?toolBarSize" android:layoutDirection="?forceLayoutDirection" app:menu="@menu/menu_help" app:navigationIcon="@drawable/ic_vector_arrow_left" style="?toolBarStyle" />
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illus_ticket_sales_clipboard" android:importantForAccessibility="no" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_application" style="@style/Text.Title" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorSecondaryText" android:gravity="center" android:id="@id/text_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_24" android:text="@string/message_application" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16" />
+        <View style="@style/Divider" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_account" style="@style/Text.SubTitle.Padded" />
+        <View style="@style/Divider" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_12" android:layout_marginStart="@dimen/space_16" android:layout_marginEnd="@dimen/space_16">
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_body" android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_username" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_body" android:textColor="?coreColorSecondaryText" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_8" app:layout_constraintEnd_toStartOf="@id/image_icon" />
+            <ImageView android:id="@id/image_icon" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:src="@drawable/ic_vector_checkmark_circle_green_tint" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/Divider" />
+        <Space android:layout_width="0.0dip" android:layout_height="@dimen/space_48" />
+        <View style="@style/Divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/purpose_fields_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/purpose_header" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_spaces_content" style="@style/Text.SubTitle.Padded" />
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/destructive_red" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/input_required" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" />
+            <View style="@style/Divider" />
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_body" android:textColor="?coreColorPrimaryText" android:id="@id/purpose_title" android:paddingTop="@dimen/space_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" />
+            <com.twitter.ui.widget.TwitterEditText android:textSize="@dimen/font_size_normal" android:textColor="?coreColorSecondaryText" android:id="@id/input_purpose" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textMultiLine" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" app:underlineStyle="@null" style="@style/TwitterEditText.NoPadding" />
+            <View style="@style/Divider" />
+            <Space android:layout_width="0.0dip" android:layout_height="@dimen/space_48" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_about_you" style="@style/Text.SubTitle.Padded" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorSecondaryText" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/input_optional" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" />
+        <View style="@style/Divider" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/text_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text.Link" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/btn_submit_app" style="@style/Text.Btn" />
+        <tag android:value="Application" android:id="@id/weaverComponent" />
+    </LinearLayout>
+</ScrollView>

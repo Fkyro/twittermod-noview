@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.tweet.TweetStatView android:id="@id/retweets_stat" style="@style/CondensedTweetStatItem" />
+    <com.twitter.ui.tweet.TweetStatView android:id="@id/favorites_stat" android:layout_toEndOf="@id/retweets_stat" style="@style/CondensedTweetStatItem" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/favorites_stat">
+        <com.twitter.ui.tweet.TweetStatView android:id="@id/quote_tweets_stat" android:visibility="gone" style="@style/CondensedTweetStatItem" />
+        <com.twitter.ui.tweet.TweetStatView android:id="@id/views_stat" android:visibility="gone" style="@style/CondensedTweetStatItem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <tag android:value="FocalTweetStats" android:id="@id/weaverComponent" />
+</RelativeLayout>

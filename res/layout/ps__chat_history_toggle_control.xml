@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/ps__bg_toggle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="end" android:id="@id/return_to_broadcast_segment" android:background="@drawable/ps__bg_red_segment" android:layout_width="@dimen/ps__chat_avatar_size" android:layout_height="@dimen/ps__chat_unread_button_height">
+        <tv.periscope.android.view.PsImageView android:layout_gravity="center" android:layout_width="10.0dip" android:layout_height="wrap_content" android:src="@drawable/ps__periscope_pin" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/show_all_chats_segment" android:background="@drawable/ps__bg_blue_segment" android:layout_width="@dimen/ps__chat_avatar_size" android:layout_height="@dimen/ps__chat_unread_button_height">
+        <tv.periscope.android.view.PsImageView android:layout_gravity="center" android:layout_width="10.0dip" android:layout_height="wrap_content" android:src="@drawable/ps__ic_chat" android:adjustViewBounds="true" />
+    </FrameLayout>
+</merge>

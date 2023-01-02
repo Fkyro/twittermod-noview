@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/thumb_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.periscope.android.ui.feed.views.MediumThumbnailView android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <tv.periscope.android.ui.feed.views.MediumThumbnailGuestView android:orientation="vertical" android:id="@id/guest_view" android:layout_width="32.0dip" android:layout_height="wrap_content" />
+    <View android:id="@id/hide_shade" android:background="@drawable/bg_broadcast_medium_thumb_hide_shade" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ps__standard_spacing_8" android:src="@drawable/ps__ic_private" android:contentDescription="@string/accessibility_broadcast_private" android:layout_marginStart="@dimen/ps__standard_spacing_8" />
+    <ImageView android:layout_gravity="center" android:id="@id/hide_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ps__ic_hide_broadcast" android:contentDescription="@string/accessibility_broadcast_hidden" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/watched_checkmark" android:padding="@dimen/ps__standard_spacing_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ps__ic_check" android:contentDescription="@string/accessibility_broadcast_previously_watched" android:alpha="0.5" />
+</FrameLayout>

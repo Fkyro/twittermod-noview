@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_28" android:paddingEnd="@dimen/space_28" app:layout_behavior="@string/twitter_bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.core.ui.components.dialog.bottomsheet.GripperView android:layout_gravity="center_horizontal" android:id="@id/handle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_20" android:text="@string/nft_collections_unsupported_title" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorPrimaryText" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:text="@string/nft_collections_unsupported_message" />
+    <com.twitter.ui.components.button.compose.HorizonComposeButton android:id="@id/nft_unsupported_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_36" android:layout_marginBottom="@dimen/space_28" android:text="@string/got_it" style="@style/TwitterButtonXLargePrimaryOutlined" />
+</LinearLayout>

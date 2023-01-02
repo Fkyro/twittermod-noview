@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ps__black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textColor="@color/ps__white" android:gravity="end" android:id="@id/comment_tweaks" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textColor="@color/ps__white" android:gravity="end" android:id="@id/heart_tweaks" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

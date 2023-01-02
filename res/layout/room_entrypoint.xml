@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.widget.FloatingActionButton android:src="@drawable/ic_vector_compose_spaces" android:contentDescription="@string/start_your_space" twitter:layout_anchor="@id/pager" style="@style/FabMenuStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <tag android:value="RoomEntrypoint" android:id="@id/weaverComponent" />
+</com.twitter.ui.widget.FloatingActionButton>

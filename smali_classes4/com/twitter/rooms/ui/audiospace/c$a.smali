@@ -1,0 +1,154 @@
+.class public final Lcom/twitter/rooms/ui/audiospace/c$a;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lx9b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/twitter/rooms/ui/audiospace/c;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lx9b<",
+        "Lyjm;",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;
+
+
+# direct methods
+.method public constructor <init>(Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/twitter/rooms/ui/audiospace/c$a;->E0:Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 22
+
+    move-object/from16 v0, p0
+
+    .line 1
+    move-object/from16 v1, p1
+
+    check-cast v1, Lyjm;
+
+    const-string v2, "it"
+
+    .line 2
+    invoke-static {v1, v2}, Lahd;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-boolean v2, v1, Lyjm;->n:Z
+
+    if-eqz v2, :cond_0
+
+    .line 4
+    iget-object v1, v0, Lcom/twitter/rooms/ui/audiospace/c$a;->E0:Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;
+
+    sget-object v2, Lcom/twitter/rooms/ui/audiospace/b;->E0:Lcom/twitter/rooms/ui/audiospace/b;
+
+    sget-object v3, Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;->n1:[Lc6e;
+
+    .line 5
+    invoke-virtual {v1, v2}, Lcom/twitter/weaver/mvi/MviViewModel;->F(Lx9b;)V
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    iget-boolean v2, v1, Lyjm;->b0:Z
+
+    if-eqz v2, :cond_1
+
+    .line 7
+    iget-object v2, v0, Lcom/twitter/rooms/ui/audiospace/c$a;->E0:Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;
+
+    .line 8
+    iget-object v3, v2, Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;->T0:Luun;
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const v21, 0x1ffe0
+
+    const-string v4, "audiospace"
+
+    const-string v5, ""
+
+    const-string v6, ""
+
+    const-string v7, "dock"
+
+    const-string v8, "click"
+
+    .line 9
+    invoke-static/range {v3 .. v21}, Luun;->F(Luun;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLpcu;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;I)V
+
+    .line 10
+    :cond_1
+    iget-object v2, v0, Lcom/twitter/rooms/ui/audiospace/c$a;->E0:Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;
+
+    new-instance v3, Laem$d;
+
+    .line 11
+    iget-boolean v1, v1, Lyjm;->b0:Z
+
+    .line 12
+    invoke-direct {v3, v1}, Laem$d;-><init>(Z)V
+
+    sget-object v1, Lcom/twitter/rooms/ui/audiospace/RoomAudioSpaceViewModel;->n1:[Lc6e;
+
+    .line 13
+    invoke-virtual {v2, v3}, Lcom/twitter/weaver/mvi/MviViewModel;->I(Ljava/lang/Object;)V
+
+    .line 14
+    :goto_0
+    sget-object v1, Lzvu;->a:Lzvu;
+
+    return-object v1
+.end method

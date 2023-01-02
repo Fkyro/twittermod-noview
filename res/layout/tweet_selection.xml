@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.widget.touchintercept.TouchInterceptingConstraintLayout android:paddingLeft="@dimen/space_20" android:paddingTop="@dimen/space_4" android:paddingRight="@dimen/space_20" android:paddingBottom="@dimen/space_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/implicit_topic_prompt" android:visibility="gone" android:layout="@layout/weaver_implicit_topic_tweet_prompt" android:inflatedId="@id/implicit_topic_prompt" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <com.twitter.tweetview.core.TweetView android:id="@id/tweet" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout="@layout/tweet_view_with_checkbox" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TweetView" />
+    <tag android:value="TweetSelection" android:id="@id/weaverComponent" />
+</com.twitter.ui.widget.touchintercept.TouchInterceptingConstraintLayout>

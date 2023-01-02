@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/app_toolbar_with_dismiss" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.twitter.dm.ui.DMAvatar android:id="@id/dm_avatar" twitter:dmImageSize="@dimen/large_user_image_size" twitter:useDarkOverlay="true" style="@style/DMConversationSettingsAvatarContainer" />
+        <com.twitter.ui.widget.TintableImageView android:layout_gravity="center" android:layout_width="@dimen/profile_camera_size" android:layout_height="@dimen/profile_camera_size" android:src="@drawable/ic_vector_camera_plus_stroke" android:contentDescription="@string/edit_group_dm_avatar" twitter:tintColorList="@color/white_opacity_85" />
+    </FrameLayout>
+    <com.twitter.ui.widget.TwitterEditText android:id="@id/edit_group_name" android:background="?coreColorAppBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textAutoCorrect|textCapWords" android:layout_marginStart="@dimen/list_row_padding_horizontal" android:layout_marginEnd="@dimen/list_row_padding_horizontal" twitter:characterCounterMode="countdown" twitter:labelText="@string/dm_edit_group_name_label" twitter:maxCharacterCount="@integer/dm_group_name" style="@style/TwitterEditText" />
+</LinearLayout>

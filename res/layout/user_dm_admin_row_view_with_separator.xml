@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.user.UserView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listRowStyle">
+        <include layout="@layout/user_with_bio" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="false" android:layout_alignParentEnd="true">
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/admin_badge" android:paddingTop="@dimen/space_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm_admin" android:paddingEnd="@dimen/space_8" style="?userWithBioScreenNameStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.twitter.ui.user.UserView>

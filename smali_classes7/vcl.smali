@@ -1,0 +1,110 @@
+.class public final Lvcl;
+.super Lljc;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lljc<",
+        "Lsm6;",
+        "Lucl;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lljc;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 13
+
+    .line 1
+    check-cast p1, Lsm6;
+
+    .line 2
+    invoke-interface {p1}, Lsm6;->C()I
+
+    move-result v0
+
+    const/16 v1, 0x19
+
+    if-ne v0, v1, :cond_0
+
+    .line 3
+    new-instance v0, Lucl;
+
+    .line 4
+    invoke-interface {p1}, Lsm6;->d0()J
+
+    move-result-wide v3
+
+    .line 5
+    invoke-interface {p1}, Lsm6;->getConversationId()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 6
+    invoke-interface {p1}, Lsm6;->c()J
+
+    move-result-wide v6
+
+    .line 7
+    invoke-interface {p1}, Lsm6;->a()J
+
+    move-result-wide v8
+
+    .line 8
+    invoke-interface {p1}, Lsm6;->getData()[B
+
+    move-result-object v1
+
+    sget-object v2, Lwcl$a;->b:Lwcl$a;
+
+    invoke-static {v1, v2}, Lgvo;->a([BLnvo;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    check-cast v10, Lucl$a;
+
+    .line 9
+    invoke-static {v10}, Lfny;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    invoke-interface {p1}, Lsm6;->t()J
+
+    move-result-wide v11
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v12}, Lucl;-><init>(JLjava/lang/String;JJLucl$a;J)V
+
+    return-object v0
+
+    .line 11
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Unsupported conversation entry type: "
+
+    .line 12
+    invoke-static {v1, v0}, Ltpb;->s(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 13
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/DMQuickShareActionsDivider" />
+    <LinearLayout android:id="@id/actions" style="@style/DMQuickShareActions">
+        <FrameLayout android:layout_weight="1.0" style="@style/DMQuickShareMessageContainer">
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/message_text_ellipsized" android:background="?editTextBackground" style="@style/DMQuickShareMessageTextEllipsized" />
+            <com.twitter.ui.widget.TwitterEditText android:id="@id/message_text" style="@style/DMQuickShareMessageEditText" />
+        </FrameLayout>
+        <ImageButton android:id="@id/send" android:background="@null" android:layout_weight="0.0" android:contentDescription="@string/post_button_send" android:layout_marginStart="@dimen/quick_share_actions_padding" style="@style/DMQuickShareSendButton" />
+    </LinearLayout>
+</LinearLayout>

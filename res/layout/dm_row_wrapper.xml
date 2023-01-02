@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dm_last_read_marker" />
+    <ViewStub android:id="@id/dm_row_wrapper_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/dm_educational_marker_stub" android:layout="@layout/dm_educational_marker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

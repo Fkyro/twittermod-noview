@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="?toolBarSize" android:layoutDirection="?forceLayoutDirection" app:navigationIcon="@drawable/ic_vector_arrow_left" app:title="@string/title_creator" style="?toolBarStyle" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/account_information_header_vdl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_account_information" style="@style/PreferenceCategoryVDLHeaderStyle" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/text_ticket" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/entry_tickets" style="@style/Text.Entry" />
+    <View android:visibility="gone" style="@style/Divider" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/text_follows" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/entry_super_follows" style="@style/Text.Entry" />
+    <View android:id="@id/get_help_header_vdl_top_divider" android:background="@color/gray_300" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" android:importantForAccessibility="no" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/get_help_header_vdl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_get_help" style="@style/PreferenceCategoryVDLHeaderStyle" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/text_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/entry_help_center" style="@style/Text.Entry" />
+    <tag android:value="CreatorMain" android:id="@id/weaverComponent" />
+</LinearLayout>

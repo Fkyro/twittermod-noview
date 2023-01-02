@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <Preference android:key="description_filters" android:summary="@string/settings_filters_item_detail" />
+    <com.twitter.settings.widget.LinkableCheckBoxPreference android:title="@string/vit_quality_filter_title" android:key="quality_filter" android:summary="@string/quality_filter_summary" twitter:clickableUrl="@string/quality_filter_summary_learn_more" />
+    <Preference android:title="@string/settings_muted_notifications" android:key="advanced_filters" />
+    <Preference android:title="@string/settings_notifications_muted_keywords" android:key="muted_keywords" />
+</PreferenceScreen>

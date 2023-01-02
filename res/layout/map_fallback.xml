@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="?abstractColorDeepGray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/space_24" android:layout_height="@dimen/space_24" android:src="@drawable/ic_bitmap_location_blue_tint" android:contentDescription="@null" />
+</FrameLayout>

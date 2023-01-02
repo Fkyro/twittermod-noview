@@ -1,0 +1,47 @@
+.class public final Ln15$a$a;
+.super Lwwr$a;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ln15$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lwwr$a<",
+        "Ln15$a;",
+        "Ln15$a$a;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/os/Bundle;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lwwr$a;-><init>(Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final i()Ljava/lang/Object;
+    .locals 2
+
+    new-instance v0, Ln15$a;
+
+    iget-object v1, p0, Lji1$a;->a:Landroid/os/Bundle;
+
+    invoke-direct {v0, v1}, Ln15$a;-><init>(Landroid/os/Bundle;)V
+
+    return-object v0
+.end method

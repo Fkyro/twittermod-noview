@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.tweetview.core.ui.collab.CollabFacePileView android:id="@id/tweet_collab_profile_image" android:layout_width="?tweetViewUserImageSize" android:layout_height="?tweetViewUserImageSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tag android:value="CollabFacePile" android:id="@id/weaverComponent" />
+</com.twitter.tweetview.core.ui.collab.CollabFacePileView>

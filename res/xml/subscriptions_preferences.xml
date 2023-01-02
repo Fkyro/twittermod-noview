@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.feature.subscriptions.ui.preference.TwitterBluePreferenceCategory android:key="twitter_blue_header" />
+    <PreferenceCategory android:title="@string/feature_settings" android:key="feature_settings_category">
+        <Preference android:title="@string/undo_tweet" android:key="undo_tweet_settings" />
+        <Preference android:title="@string/reader" android:key="reader_settings" />
+        <Preference android:title="@string/app_icon" android:key="app_icon_settings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/subscription_title">
+        <Preference android:title="@string/manage_subscription" android:key="manage_subscription" />
+        <Preference android:title="@string/subscriptions_help_center_label" android:key="help_center" />
+        <Preference android:title="@string/subscriptions_support_label" android:key="get_support" />
+    </PreferenceCategory>
+    <com.twitter.feature.subscriptions.ui.preference.ExploreFeaturesPreferenceCategory android:key="explore_features_category" />
+</PreferenceScreen>

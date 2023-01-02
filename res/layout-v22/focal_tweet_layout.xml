@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/outer_layout_row_view_tweet" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/coTweet_confirmation_container" android:layout="@layout/co_tweet_confirmation" android:inflatedId="@id/coTweet_confirmation_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?timelineRowHorizontalPadding" android:layout_marginTop="?timelineRowVerticalPadding" android:layout_marginRight="?timelineRowHorizontalPadding" android:layout_marginHorizontal="?timelineRowHorizontalPadding">
+        <tag android:value="CoTweetConfirmationViewStub" android:id="@id/weaverComponent" />
+    </ViewStub>
+    <ViewStub android:id="@id/tweet_conversation_banner" android:layout="@layout/tweet_conversation_banner" android:inflatedId="@id/tweet_conversation_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_8" android:layout_marginTop="@dimen/space_4" android:layout_marginRight="@dimen/space_8" android:layout_marginBottom="@dimen/space_4" android:layout_marginHorizontal="@dimen/space_8" android:layout_marginVertical="@dimen/space_4">
+        <tag android:value="ConversationBannerStub" android:id="@id/weaverComponent" />
+    </ViewStub>
+    <ViewStub android:id="@id/interstitial_view_stub" android:layout="@layout/withheld_tweet_tombstone" android:inflatedId="@id/interstitial_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <tag android:value="WithheldTombstoneStub" android:id="@id/weaverComponent" />
+    </ViewStub>
+    <ViewStub android:id="@id/implicit_topic_prompt" android:layout="@layout/weaver_implicit_topic_tweet_prompt" android:inflatedId="@id/implicit_topic_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginStart="?timelineRowHorizontalPadding" android:layout_marginEnd="?timelineRowHorizontalPadding">
+        <tag android:value="ImplicitTopicPrompt" android:id="@id/weaverComponent" />
+    </ViewStub>
+    <ViewStub android:id="@id/social_context_aggressive_prompt_stub" android:layout="@layout/topic_context_aggressive_prompt_view" android:inflatedId="@id/social_context_aggressive_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <tag android:value="TopicContextAggressivePromptStub" android:id="@id/weaverComponent" />
+    </ViewStub>
+    <com.twitter.tweetview.core.TweetView android:id="@id/row" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TweetView.Focal" />
+    <View android:id="@id/bottom_divider" android:background="?coreColorBorder" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" style="@style/HorizontalRule" />
+</LinearLayout>

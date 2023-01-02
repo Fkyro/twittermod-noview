@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorExclusiveLabelText" android:background="@drawable/super_follower_label_bg" android:padding="@dimen/space_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/super_follower"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tag android:value="SuperFollowerLabel" android:id="@id/weaverComponent" />
+</com.twitter.ui.components.text.legacy.TypefacesTextView>

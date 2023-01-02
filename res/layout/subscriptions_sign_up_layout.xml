@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_header_subscriptions_new" android:scaleType="fitXY" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ViewStub android:id="@id/original_content" android:layout="@layout/subscriptions_signup_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+                <tag android:value="OriginalSignupPageStub" android:id="@id/weaverComponent" />
+            </ViewStub>
+            <ViewStub android:layout="@layout/subscriptions_signup_content_v2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/original_content">
+                <tag android:value="NewSignupPageStub" android:id="@id/weaverComponent" />
+            </ViewStub>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/subscription_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/settings_divider" android:background="?abstractColorDivider" android:focusable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorPrimaryText" android:gravity="center_horizontal" android:id="@id/footer_text" android:paddingTop="@dimen/space_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_24" android:layout_marginRight="@dimen/space_24" />
+        <com.twitter.iap.ui.InAppPurchaseProductButton android:id="@id/subscription_sign_up_button" android:paddingTop="@dimen/space_12" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_12" android:paddingEnd="@dimen/space_16" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorPrimaryText" android:id="@id/terms" android:paddingBottom="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_24" android:layout_marginRight="@dimen/space_24" android:text="@string/marketing_page_terms" />
+    </LinearLayout>
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:id="@id/subscription_disabled_container" android:background="@drawable/subscriptions_disabled_background" android:padding="@dimen/space_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_32" android:text="@string/subscriptions_temporarily_disabled_message" android:drawablePadding="@dimen/space_8" android:drawableStart="@drawable/ic_vector_twitter_blue" />
+</LinearLayout>

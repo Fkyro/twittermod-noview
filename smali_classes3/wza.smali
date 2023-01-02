@@ -1,0 +1,87 @@
+.class public final Lwza;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lu9b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lu9b<",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;
+
+.field public final synthetic F0:Lbk6;
+
+.field public final synthetic G0:Lpza;
+
+
+# direct methods
+.method public constructor <init>(Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;Lbk6;Lpza;)V
+    .locals 0
+
+    iput-object p1, p0, Lwza;->E0:Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;
+
+    iput-object p2, p0, Lwza;->F0:Lbk6;
+
+    iput-object p3, p0, Lwza;->G0:Lpza;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lwza;->E0:Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;
+
+    iget-object v1, p0, Lwza;->F0:Lbk6;
+
+    const-string v2, "it"
+
+    invoke-static {v1, v2}, Lahd;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v3, v0, Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;->c:Llmt;
+
+    .line 3
+    iget-object v0, v0, Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;->b:Lj8b;
+
+    const-string v4, "follow_toggle"
+
+    const-string v5, "unfollow"
+
+    .line 4
+    invoke-virtual {v3, v1, v4, v5, v0}, Llmt;->a(Lbk6;Ljava/lang/String;Ljava/lang/String;Lj8b;)V
+
+    .line 5
+    iget-object v0, p0, Lwza;->E0:Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;
+
+    iget-object v1, p0, Lwza;->G0:Lpza;
+
+    iget-object v3, p0, Lwza;->F0:Lbk6;
+
+    invoke-static {v3, v2}, Lahd;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, v1, v3}, Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;->c(Lcom/twitter/android/topiccarousel/followtoggle/FollowToggleViewDelegateBinder;Lpza;Lbk6;)V
+
+    .line 6
+    sget-object v0, Lzvu;->a:Lzvu;
+
+    return-object v0
+.end method

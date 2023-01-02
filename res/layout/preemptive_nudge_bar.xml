@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/preemptive_nudge_banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preemptive_nudge_banner" android:background="?abstractColorUnread" android:padding="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_ellipses" android:layout_alignParentTop="true" android:contentDescription="@null" android:layout_marginEnd="@dimen/space_8" android:layout_alignParentStart="true" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/preemptive_second_degree_nudge_title" android:layout_marginEnd="@dimen/space_12" android:layout_toStartOf="@id/hide_tweet_button_container" android:layout_toEndOf="@id/icon" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" layout="@layout/preemptive_nudge_hide_tweet_button" />
+    </RelativeLayout>
+</FrameLayout>

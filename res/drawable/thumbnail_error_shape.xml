@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:gravity="center" android:shape="ring" android:thicknessRatio="2.0" android:useLevel="false" android:innerRadius="0.0dip">
+            <size android:height="@dimen/selector_item_size" android:width="@dimen/selector_item_size" />
+            <solid android:color="@color/gray_200" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/thumbnail_error" />
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TweetViewHeaderCoTweet">
+        <item name="alignContent">flex_start</item>
+        <item name="alignItems">center</item>
+        <item name="flexDirection">row</item>
+        <item name="flexWrap">nowrap</item>
+    </style>
+</resources>

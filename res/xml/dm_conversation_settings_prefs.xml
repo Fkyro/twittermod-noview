@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.app.dm.widget.DMAvatarPreference android:key="pref_avatar_name" />
+    <com.twitter.ui.widget.PreferenceTopCategoryCompat android:title="@string/subtitle_people" android:key="category_people" app:allowDividerAbove="true" app:allowDividerBelow="false">
+        <com.twitter.dm.conversation.widget.DMAdminPreference android:key="pref_admin" />
+        <androidx.preference.Preference android:title="@string/dm_people" android:key="pref_show_members" />
+        <androidx.preference.Preference android:title="@string/dm_add_people" android:key="pref_add_members" />
+    </com.twitter.ui.widget.PreferenceTopCategoryCompat>
+    <com.twitter.ui.widget.PreferenceTopCategoryCompat android:title="@string/settings_notifications_title" android:key="category_notifications">
+        <SwitchPreferenceCompat android:persistent="false" android:title="@string/dm_turn_off_notifications" android:key="pref_mute_conversation" />
+        <SwitchPreferenceCompat android:persistent="true" android:title="@string/dm_mute_mentions" android:key="pref_mute_mentions" />
+    </com.twitter.ui.widget.PreferenceTopCategoryCompat>
+    <com.twitter.android.widget.DividerPreferenceCompat />
+    <androidx.preference.Preference android:title="@string/dm_block_user_action" android:key="pref_block_user" />
+    <androidx.preference.Preference android:title="@string/dm_report_conversation_action" android:key="pref_report_conversation" />
+    <androidx.preference.Preference android:title="@string/messages_leave_group_conversation" android:key="pref_leave_conversation" />
+</PreferenceScreen>

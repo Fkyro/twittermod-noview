@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.tweetview.core.ui.tweetheader.TweetCollabHeaderView android:id="@id/tweet_header_collab" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tag android:value="TweetCollabHeader" android:id="@id/weaverComponent" />
+</com.twitter.tweetview.core.ui.tweetheader.TweetCollabHeaderView>

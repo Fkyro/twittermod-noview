@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.settings.widget.LinkableSwitchPreferenceCompat android:layout="@layout/switch_preference" android:title="@string/dm_settings_allow_messages_title" android:key="allow_dms_from" android:summary="@string/dm_settings_allow_messages_subtitle" android:order="1" twitter:clickableUrl="@string/url_dm_receive_from_anyone_learn_more" />
+    <com.twitter.settings.widget.LinkableSwitchPreferenceCompat android:layout="@layout/switch_preference" android:title="@string/dm_settings_filter_messages_title" android:key="dm_quality_filter" android:summary="@string/dm_settings_filter_messages_subtitle" android:order="2" twitter:clickableUrl="@string/url_dm_quality_filter_learn_more" />
+    <com.twitter.settings.widget.LinkableSwitchPreferenceCompat android:layout="@layout/switch_preference" android:title="@string/dm_settings_filter_media_title" android:key="dm_nsfw_filter" android:summary="@string/dm_settings_filter_media_subtitle" android:order="3" twitter:clickableUrl="@string/url_nsfw_filter_learn_more" />
+    <com.twitter.settings.widget.LinkableSwitchPreferenceCompat android:layout="@layout/switch_preference" android:title="@string/dm_settings_read_receipts_title" android:key="dm_read_receipts" android:summary="@string/dm_settings_read_receipts_subtitle" android:order="4" twitter:clickableUrl="@string/url_dm_read_receipts_learn_more" />
+</PreferenceScreen>

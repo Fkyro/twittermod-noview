@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:selectable="false" android:summary="@string/news_subtitle" android:order="1" />
+    <Preference android:icon="@drawable/ic_vector_no" android:title="@string/news_ad_free_articles_title" android:selectable="false" android:key="ad_free_articles" android:summary="@string/news_ad_free_articles_subtitle" android:order="2" />
+    <Preference android:icon="@drawable/ic_vector_news_stroke" android:title="@string/news_twitter_blue_publishers_title" android:key="twitter_blue_publisher" android:summary="@string/news_twitter_blue_publishers_subtitle" android:order="3" />
+    <Preference android:icon="@drawable/ic_vector_bar_chart_horizontal_stroke" android:title="@string/news_see_your_impact_title" android:key="see_your_impact" android:summary="@string/news_see_your_impact_subtitle" android:order="4" />
+    <Preference android:icon="@drawable/ic_vector_fire_stroke" android:title="@string/news_top_articles_title" android:key="top_articles" android:summary="@string/news_top_articles_subtitle" android:order="5" />
+    <Preference android:icon="@drawable/ic_vector_book_stroke_on" android:title="@string/news_reader_mode_title" android:selectable="false" android:key="reader_mode" android:summary="@string/news_reader_mode_subtitle" android:order="6" />
+    <Preference android:title="@string/ad_free_article_help" android:key="ad_free_articles_help" android:order="7" />
+</PreferenceScreen>

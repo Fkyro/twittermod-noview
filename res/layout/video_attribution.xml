@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/card_border_with_bottom_rounded_corners" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/attribution_user_view_stub" android:layout="@layout/attribution_user_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textColor="?coreColorPrimaryText" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/inset_medium" android:layout_marginEnd="@dimen/inset_medium" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorPrimaryText" android:ellipsize="end" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:layout_marginBottom="@dimen/inset_medium" android:maxLines="4" android:layout_marginStart="@dimen/inset_medium" android:layout_marginEnd="@dimen/inset_medium" />
+</LinearLayout>

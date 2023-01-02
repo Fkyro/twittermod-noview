@@ -1,0 +1,167 @@
+.class public Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState;
+.super Lim1;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<OBJ:",
+        "Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;",
+        ">",
+        "Lim1<",
+        "TOBJ;>;"
+    }
+.end annotation
+
+.annotation build Lx6e;
+.end annotation
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState$a;
+
+    invoke-direct {v0}, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState$a;-><init>()V
+
+    sput-object v0, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lim1;-><init>(Landroid/os/Parcel;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TOBJ;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Lim1;-><init>(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public deserializeValue(Lrvo;Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;)Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrvo;",
+            "TOBJ;)TOBJ;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/ClassNotFoundException;
+        }
+    .end annotation
+
+    .line 2
+    invoke-super {p0, p1, p2}, Lim1;->deserializeValue(Lrvo;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;
+
+    .line 3
+    sget-object v0, Lsw;->f:Lsw$b;
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {v0, p1}, Lzii;->a(Lrvo;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 5
+    check-cast p1, Lsw;
+
+    iput-object p1, p2, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;->a:Lsw;
+
+    return-object p2
+.end method
+
+.method public bridge synthetic deserializeValue(Lrvo;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/ClassNotFoundException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;
+
+    invoke-virtual {p0, p1, p2}, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState;->deserializeValue(Lrvo;Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;)Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public serializeValue(Lsvo;Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lsvo;",
+            "TOBJ;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 2
+    invoke-super {p0, p1, p2}, Lim1;->serializeValue(Lsvo;Ljava/lang/Object;)V
+
+    .line 3
+    iget-object p2, p2, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;->a:Lsw;
+
+    sget-object v0, Lsw;->f:Lsw$b;
+
+    invoke-virtual {p1, p2, v0}, Lsvo;->P(Ljava/lang/Object;Lnvo;)Lsvo;
+
+    return-void
+.end method
+
+.method public bridge synthetic serializeValue(Lsvo;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;
+
+    invoke-virtual {p0, p1, p2}, Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory$SavedState;->serializeValue(Lsvo;Lcom/twitter/android/search/implementation/results/SearchPageInfoFactory;)V
+
+    return-void
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="condensed_tweet_avatar_size">40.0dip</dimen>
+    <dimen name="condensed_tweet_media_corner_radius">10.0dip</dimen>
+    <dimen name="condensed_tweet_media_tile_container_size">100.0dip</dimen>
+    <item type="dimen" name="condensed_tweet_text_size">@dimen/font_size_normal</item>
+    <dimen name="condensed_tweet_tile_width">320.0dip</dimen>
+</resources>

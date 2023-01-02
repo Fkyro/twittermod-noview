@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_vector_follow" android:id="@id/toolbar_find_people" android:visible="false" android:title="@string/people_discovery_title" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_vector_sparkle_stroke" android:id="@id/toolbar_timeline_switch" android:visible="false" android:title="@string/swish_switch_timeline" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_vector_messages_stroke" android:id="@id/toolbar_dms_item" android:visible="false" app:showAsAction="ifRoom" />
+    <item android:icon="?iconSettings" android:id="@id/trends_menu_settings" android:visible="false" android:title="@string/trends_menu_settings" app:showAsAction="ifRoom" />
+    <item android:icon="?iconSettings" android:id="@id/toolbar_settings_notif" android:visible="false" android:title="@string/notification_settings" app:showAsAction="ifRoom" />
+    <item android:icon="?iconSettings" android:id="@id/toolbar_settings_dm" android:visible="false" android:title="@string/settings_direct_messages" app:showAsAction="ifRoom" />
+</menu>

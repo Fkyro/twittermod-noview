@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/topic_tile_pivot_bg" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/topic_tile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="@dimen/space_8" android:layout_marginStart="@dimen/space_24" android:layout_marginEnd="@dimen/space_24" />
+</FrameLayout>

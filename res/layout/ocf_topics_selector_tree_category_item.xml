@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ocf_small_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/ripple_pressed_selector_rectangle" android:paddingTop="@dimen/space_12" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end|center" android:id="@id/expand_category_button" android:visibility="visible" android:duplicateParentState="false" android:layout_width="@dimen/ocf_logo_width" android:layout_height="@dimen/ocf_logo_height" android:src="@drawable/ic_vector_chevron_down" android:scaleType="center" android:contentDescription="@string/toggle_category" android:layout_marginEnd="@dimen/ocf_small_spacing" twitter:layout_constraintEnd_toEndOf="parent" twitter:layout_constraintTop_toTopOf="parent" twitter:tint="@color/gray_200" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textStyle="bold" android:textColor="@color/twitter_blue" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" twitter:layout_constraintStart_toStartOf="parent" twitter:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" android:layout_marginEnd="@dimen/space_12" style="@style/HorizontalRule" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/item_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_12" />
+</LinearLayout>

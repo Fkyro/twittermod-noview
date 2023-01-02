@@ -1,0 +1,88 @@
+.class public final enum Lfs4$b;
+.super Lfs4;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lfs4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4011
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    const-string v0, "CIRCLE"
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {p0, v0, v1, v2}, Lfs4;-><init>(Ljava/lang/String;ILgm0;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Lkwn;)F
+    .locals 1
+
+    iget v0, p1, Lkwn;->a:F
+
+    iget p1, p1, Lkwn;->b:F
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final e(Lkwn;)F
+    .locals 1
+
+    iget v0, p1, Lkwn;->a:F
+
+    iget p1, p1, Lkwn;->b:F
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final f(Lkwn;)F
+    .locals 1
+
+    iget v0, p1, Lkwn;->a:F
+
+    iget p1, p1, Lkwn;->b:F
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final i(Lkwn;)F
+    .locals 1
+
+    iget v0, p1, Lkwn;->a:F
+
+    iget p1, p1, Lkwn;->b:F
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method

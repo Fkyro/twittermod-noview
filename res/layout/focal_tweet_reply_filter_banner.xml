@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.components.inlinecallout.HorizonInlineCalloutView android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+    <tag android:value="com.twitter.tweetview.focal.ui.replyfilter.ReplyFilterViewDelegateBinder" android:id="@id/viewBinder" />
+</com.twitter.ui.components.inlinecallout.HorizonInlineCalloutView>

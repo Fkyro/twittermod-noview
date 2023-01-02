@@ -1,0 +1,98 @@
+.class public final Lmht$a;
+.super Loii;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lmht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Loii<",
+        "Lmht;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:I
+
+.field public b:Ljava/lang/String;
+
+.field public c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public d:Llbs;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Loii;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final i()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lmht;
+
+    invoke-direct {v0, p0}, Lmht;-><init>(Lmht$a;)V
+
+    return-object v0
+.end method
+
+.method public final l()Z
+    .locals 2
+
+    sget-object v0, Lvj6;->a:Ljava/util/Set;
+
+    iget v1, p0, Lmht$a;->a:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lmht$a;->b:Ljava/lang/String;
+
+    invoke-static {v0}, Lupq;->g(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dm_recipient_search_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <View android:background="?coreColorBorder" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" />
+    <com.twitter.ui.autocomplete.ListViewSuggestionEditText android:id="@id/suggestion_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableStart="?iconSearch" twitter:focusOnDismiss="true" twitter:lengthThreshold="0" style="@style/DMRecipientSearch" />
+</LinearLayout>

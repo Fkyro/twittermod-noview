@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="@color/destructive_red" android:gravity="start" android:id="@id/refresh" android:background="?selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Force Server Refresh" android:paddingStart="20.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:gravity="start" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Only show active campaigns" android:layout_weight="1.0" android:paddingStart="20.0dip" android:paddingEnd="30.0dip" />
+        <Switch android:id="@id/active_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:gravity="start" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Only show animated campaigns" android:layout_weight="1.0" android:paddingStart="20.0dip" android:paddingEnd="30.0dip" />
+        <Switch android:id="@id/animated_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="?coreColorSectionDivider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:gravity="start" android:id="@id/hashflag_counts" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:gravity="start" android:id="@id/campaign_counts" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:gravity="start" android:id="@id/last_refresh" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" />
+    <View android:background="?coreColorSectionDivider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

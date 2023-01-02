@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.view.DraggableDrawerLayout android:id="@id/dm_drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:aboveDrawerForegroundId="@id/dm_activity_panel_foreground" twitter:aboveDrawerViewId="@id/dm_activity_panel" twitter:isAdaptiveHeight="true" twitter:upPositionDrawerToScreenHeightRatio="0.4" twitter:upPositionInLandscapeEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dm_activity_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root_coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewSwitcher android:id="@id/toolbar_switcher" android:background="?coreColorAppBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?toolBarStyle">
+                    <include layout="@layout/toolbar_container" />
+                    <include android:id="@id/secondary_toolbar" android:visibility="gone" layout="@layout/app_toolbar_with_dismiss" />
+                </ViewSwitcher>
+                <com.twitter.ui.widget.DockLayout android:id="@id/dock" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="?toolbarContainerId" />
+                </com.twitter.ui.widget.DockLayout>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <ImageView android:id="@id/dm_activity_panel_foreground" android:background="?coreColorAppBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" android:alpha="0.0" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/action_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="?coreColorBorder" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" />
+        <ListView android:layout_gravity="center" android:id="@id/dm_quick_reply_options_list" android:background="?coreColorAppBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_line" android:dividerHeight="@dimen/border_thickness" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</com.twitter.ui.view.DraggableDrawerLayout>

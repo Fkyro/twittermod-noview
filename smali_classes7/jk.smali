@@ -1,0 +1,23 @@
+.class public interface abstract Ljk;
+.super Ljava/lang/Object;
+.source "Twttr"
+
+# interfaces
+.implements Lpyp;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ljk$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lpyp<",
+        "Ljk$a;",
+        ">;"
+    }
+.end annotation

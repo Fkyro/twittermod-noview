@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?toolBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ocf_top_toolbar" />
+    <com.twitter.media.ui.image.BadgeableImageView android:layout_gravity="end|center" android:id="@id/cart_button" android:background="@drawable/bg_nav_item" android:paddingTop="1.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="@dimen/ocf_logo_width" android:layout_height="@dimen/ocf_logo_height" android:layout_margin="@dimen/ocf_standard_spacing" android:src="@drawable/ic_vector_topics_stroke" android:scaleType="center" android:contentDescription="@null" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" twitter:badgeIndicatorStyle="@style/BadgeIndicator.Tabs.Main" twitter:tint="@color/twitter_blue" />
+</FrameLayout>

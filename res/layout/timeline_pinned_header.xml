@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.list.PinnedHeaderListViewContainer android:id="@id/pinned_header_container" android:layout_width="fill_parent" android:layout_height="fill_parent" twitter:builtInDividerHeight="@dimen/grouped_row_view_gap_size" xmlns:twitter="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/list_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="top" android:id="@id/pinned_header_floating_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/module_header_row_view" />
+</com.twitter.ui.list.PinnedHeaderListViewContainer>

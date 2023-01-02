@@ -1,0 +1,25 @@
+.class public final Lb24;
+.super Lpvo;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lpvo<",
+        "Lf24;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/os/Bundle;)V
+    .locals 1
+
+    sget-object v0, Lf24;->l:Lf24$b;
+
+    invoke-direct {p0, p1, v0}, Lpvo;-><init>(Landroid/os/Bundle;Lnvo;)V
+
+    return-void
+.end method

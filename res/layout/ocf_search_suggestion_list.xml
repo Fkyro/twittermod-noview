@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.autocomplete.ListViewSuggestionEditText android:id="@id/suggestion_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textMultiLine|textNoSuggestions" android:imeOptions="flagNoExtractUi" twitter:focusOnDismiss="true" twitter:lengthThreshold="0" style="@style/SearchSuggestionListInputText" />
+    <ListView android:id="@id/suggestion_list_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

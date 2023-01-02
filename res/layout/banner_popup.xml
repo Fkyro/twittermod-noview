@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/popup_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?abstractColorUnread" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/top_divider" android:background="@color/twitter_blue" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.twitter.ui.widget.TintableImageView android:id="@id/close_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_12" android:layout_marginTop="@dimen/space_12" android:layout_marginRight="@dimen/space_12" android:src="@drawable/ic_vector_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/top_divider" app:tint="?abstractColorMediumGray" />
+        <FrameLayout android:id="@id/content_view_container" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/close_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top_divider" />
+        <View android:id="@id/bottom_divider" android:background="@color/twitter_blue" android:layout_width="fill_parent" android:layout_height="@dimen/border_thickness" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

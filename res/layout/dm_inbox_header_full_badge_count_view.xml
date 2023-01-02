@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListRow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.widget.FullBadgeView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/count" android:background="?badgeNumberBackgroundNoStroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/navigation_badge_min_size" android:minHeight="@dimen/navigation_badge_min_size" android:importantForAccessibility="no" style="@style/SimpleRowViewCount" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textStyle="normal" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm_inbox_high_quality_requests_title" android:drawablePadding="@dimen/header_module_title_drawable_padding" android:drawableStart="?iconMessageRequests" android:importantForAccessibility="no" twitter:drawableTintColor="?abstractColorDeepGray" style="@style/SimpleRowViewTitle" />
+</FrameLayout>

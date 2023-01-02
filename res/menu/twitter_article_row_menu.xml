@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_vector_drafts" android:id="@id/share_via_tweet_item" android:title="@string/share_twitter_article_menu_item_txt" />
+    <item android:icon="@drawable/ic_vector_link" android:id="@id/copy_link_item" android:title="@string/copy_twitter_article_menu_item_txt" />
+    <item android:icon="@drawable/ic_vector_help_circle" android:id="@id/help_link_item" android:title="@string/twitter_article_help_menu_item_txt" />
+    <group android:enabled="false" android:id="@id/group_writer" android:visible="false">
+        <item android:icon="@drawable/ic_vector_write_stroke" android:id="@id/move_to_drafts_item" android:title="@string/unpublish_twitter_article_menu_item_txt" />
+    </group>
+</menu>

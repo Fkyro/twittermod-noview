@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_1_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_2_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_3_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_4_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_5_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_6_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_1_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_2_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_3_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_4_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_5_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_6_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_1_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_6_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_5_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_4_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_3_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_2_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_1_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_6_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_5_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_4_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_3_super_follower" />
+    <item android:duration="830" android:drawable="@drawable/docker_gradient_2_super_follower" />
+</animation-list>

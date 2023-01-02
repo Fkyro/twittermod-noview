@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:background="?coreColorAppBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.twitter.dm.widget.DMInboxRequestsEducation android:id="@id/education_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/empty_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TLEmptyViewTextLegacy" />
+                <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/empty_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TLEmptyViewDescriptionTextLegacy" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <tag android:value="RequestInbox" android:id="@id/weaverComponent" />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

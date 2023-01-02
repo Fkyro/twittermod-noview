@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/sheet_container" android:paddingBottom="@dimen/space_24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.twitter.core.ui.components.dialog.bottomsheet.GripperView android:layout_gravity="center_horizontal" android:id="@id/gripper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_title_3" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_32" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_32" android:text="@string/share_title" app:fontFamily="?fontFamilyHeavy" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorSecondaryText" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_32" android:layout_marginTop="@dimen/space_8" android:layout_marginRight="@dimen/space_32" android:text="@string/share_subtitle" />
+        <androidx.cardview.widget.CardView android:id="@id/screenshot_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_32" android:layout_marginTop="@dimen/space_16" android:layout_marginRight="@dimen/space_32" app:cardCornerRadius="@dimen/space_8" app:cardElevation="@dimen/space_4">
+            <ImageView android:id="@id/tweet_screenshot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="null" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/share_carousel_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_32" android:layout_marginTop="@dimen/space_20" android:layout_marginRight="@dimen/space_32" android:layout_marginBottom="@dimen/space_20" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <com.twitter.ui.components.button.legacy.TwitterButton android:id="@id/skip" android:layout_width="fill_parent" android:layout_height="@dimen/space_56" android:layout_marginLeft="@dimen/space_32" android:layout_marginRight="@dimen/space_32" android:text="@string/skip" style="@style/TwitterButtonLargePrimaryOutlined" />
+    </LinearLayout>
+</ScrollView>

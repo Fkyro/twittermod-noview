@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.view.GroupedRowView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.view.TimelineRecyclerView android:id="@id/bn_topics_recyclerview" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_20" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_20" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" />
+</com.twitter.ui.view.GroupedRowView>

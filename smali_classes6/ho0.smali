@@ -1,0 +1,11 @@
+.class public interface abstract Lho0;
+.super Ljava/lang/Object;
+.source "Twttr"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public abstract b(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+.end method

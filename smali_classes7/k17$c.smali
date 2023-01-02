@@ -1,0 +1,40 @@
+.class public final Lk17$c;
+.super Lk17;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lk17;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+
+# static fields
+.field public static final a:Lk17$c;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk17$c;
+
+    invoke-direct {v0}, Lk17$c;-><init>()V
+
+    sput-object v0, Lk17$c;->a:Lk17$c;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lk17;-><init>()V
+
+    return-void
+.end method

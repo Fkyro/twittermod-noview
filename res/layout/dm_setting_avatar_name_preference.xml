@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?coreColorAppBackground" android:paddingBottom="@dimen/message_avatar_top_margin_large" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.dm.ui.DMAvatar android:layout_gravity="center" android:id="@id/dm_avatar" twitter:dmImageSize="@dimen/large_user_image_size" style="@style/DMConversationSettingsAvatarContainer" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/preference_row_padding_horizontal" android:paddingEnd="@dimen/preference_row_padding_horizontal">
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:gravity="center" android:id="@id/dm_conversation_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <include android:layout_gravity="center_vertical" android:id="@id/dm_verified_icon" android:visibility="gone" android:layout_width="@dimen/dm_toolbar_verified_icon_size" android:layout_height="@dimen/dm_toolbar_verified_icon_size" android:layout_marginStart="@dimen/icon_spacing" android:layout_marginEnd="@dimen/icon_spacing" layout="@layout/profile_icon_verified" />
+    </LinearLayout>
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textStyle="normal" android:textColor="?coreColorSecondaryText" android:gravity="bottom" android:layout_gravity="center" android:id="@id/dm_conversation_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/topic_tiles_show_more_btn_weaver" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vertical_grid_module_show_more_btn" android:textAllCaps="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topic_tiles_recyclerview" style="@style/ModuleFooterText" />
+    <com.twitter.ui.view.TimelineRecyclerView android:id="@id/topic_tiles_recyclerview" android:paddingLeft="@dimen/space_8" android:paddingTop="@dimen/space_20" android:paddingRight="@dimen/space_8" android:paddingBottom="@dimen/space_20" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" app:layout_constraintStart_toStartOf="parent" />
+</merge>

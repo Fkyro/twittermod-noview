@@ -1,0 +1,122 @@
+.class public final Lr86$a;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lmab;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lr86;->a([Lj1l;Lmab;Lt16;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lmab<",
+        "Lt16;",
+        "Ljava/lang/Integer;",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:[Lj1l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Lj1l<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic F0:Lmab;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lmab<",
+            "Lt16;",
+            "Ljava/lang/Integer;",
+            "Lzvu;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic G0:I
+
+
+# direct methods
+.method public constructor <init>([Lj1l;Lmab;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Lj1l<",
+            "*>;",
+            "Lmab<",
+            "-",
+            "Lt16;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lzvu;",
+            ">;I)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lr86$a;->E0:[Lj1l;
+
+    iput-object p2, p0, Lr86$a;->F0:Lmab;
+
+    iput p3, p0, Lr86$a;->G0:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final y0(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    check-cast p1, Lt16;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 1
+    iget-object p2, p0, Lr86$a;->E0:[Lj1l;
+
+    array-length v0, p2
+
+    invoke-static {p2, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, [Lj1l;
+
+    iget-object v0, p0, Lr86$a;->F0:Lmab;
+
+    iget v1, p0, Lr86$a;->G0:I
+
+    or-int/lit8 v1, v1, 0x1
+
+    invoke-static {p2, v0, p1, v1}, Lr86;->a([Lj1l;Lmab;Lt16;I)V
+
+    .line 2
+    sget-object p1, Lzvu;->a:Lzvu;
+
+    return-object p1
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/nft_activity_collection_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/clear" android:layoutDirection="?forceLayoutDirection" android:outlineAmbientShadowColor="@color/clear" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:navigationIcon="@drawable/ic_vector_arrow_left" style="@style/ToolBarStyle" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/nft_activity_collection_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <tag android:value="NftCollectionActivity" android:id="@id/weaverComponent" />
+</LinearLayout>

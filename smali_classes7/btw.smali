@@ -1,0 +1,240 @@
+.class public final Lbtw;
+.super Lx3w;
+.source "Twttr"
+
+# interfaces
+.implements Lk8v;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lbtw$a;,
+        Lbtw$b;
+    }
+.end annotation
+
+
+# static fields
+.field public static final n:Lyvc$b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Collection<",
+            "Ljava/lang/Class<",
+            "+",
+            "Liyp;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public static final o:[Ljava/lang/String;
+
+
+# instance fields
+.field public final m:Lbtw$b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Loyp<",
+            "Lk8v$a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 58
+
+    .line 1
+    sget-object v0, Lyvc;->F0:Lyvc$b;
+
+    sget v1, Leji;->a:I
+
+    .line 2
+    sput-object v0, Lbtw;->n:Lyvc$b;
+
+    const-string v2, "_id"
+
+    const-string v3, "user_groups_type"
+
+    const-string v4, "user_groups_tag"
+
+    const-string v5, "user_groups_owner_id"
+
+    const-string v6, "user_groups_user_id"
+
+    const-string v7, "user_groups_is_last"
+
+    const-string v8, "user_groups_pc"
+
+    const-string v9, "user_groups_g_flags"
+
+    const-string v10, "users__id"
+
+    const-string v11, "users_user_id"
+
+    const-string v12, "users_username"
+
+    const-string v13, "users_name"
+
+    const-string v14, "users_image_url"
+
+    const-string v15, "users_user_flags"
+
+    const-string v16, "users_is_profile_translatable"
+
+    const-string v17, "users_friendship"
+
+    const-string v18, "users_friendship_time"
+
+    const-string v19, "users_are_dms_muted"
+
+    const-string v20, "users_is_active_creator"
+
+    const-string v21, "users_profile_image_colors"
+
+    const-string v22, "users_has_nft_avatar"
+
+    const-string v23, "users_is_blue_verified"
+
+    const-string v24, "users_user_label_data"
+
+    const-string v25, "users_verified_type"
+
+    const-string v26, "users_super_followers_count"
+
+    const-string v27, "users_blob_data"
+
+    const-string v28, "users_has_twitter_articles"
+
+    const-string v29, "users_verified_phone_status"
+
+    const-string v30, "users_is_graduated"
+
+    const-string v31, "users_header_url"
+
+    const-string v32, "users_description"
+
+    const-string v33, "users_link_color"
+
+    const-string v34, "users_web_url"
+
+    const-string v35, "users_url_entities"
+
+    const-string v36, "users_bg_color"
+
+    const-string v37, "users_extended_profile_fields"
+
+    const-string v38, "users_location"
+
+    const-string v39, "users_structured_location"
+
+    const-string v40, "users_followers"
+
+    const-string v41, "users_fast_followers"
+
+    const-string v42, "users_friends"
+
+    const-string v43, "users_statuses"
+
+    const-string v44, "users_favorites"
+
+    const-string v45, "users_media_count"
+
+    const-string v46, "users_profile_created"
+
+    const-string v47, "users_updated"
+
+    const-string v48, "users_pinned_tweet_id"
+
+    const-string v49, "users_advertiser_type"
+
+    const-string v50, "users_hash"
+
+    const-string v51, "users_translator_type"
+
+    const-string v52, "users_profile_interstitial_type"
+
+    const-string v53, "users_profile_banner_colors"
+
+    const-string v54, "users_withheld_info"
+
+    const-string v55, "users_tip_jar_settings"
+
+    const-string v56, "users_smart_blocking_expiration"
+
+    const-string v57, "users_professional"
+
+    .line 3
+    filled-new-array/range {v2 .. v57}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lbtw;->o:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ls7o;)V
+    .locals 1
+    .annotation build Lx6e;
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Lx3w;-><init>(Ls7o;)V
+
+    .line 2
+    new-instance v0, Lbtw$b;
+
+    invoke-direct {v0, p0, p1}, Lbtw$b;-><init>(Lbtw;Ls7o;)V
+
+    iput-object v0, p0, Lbtw;->m:Lbtw$b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()Lnyp;
+    .locals 1
+
+    iget-object v0, p0, Lbtw;->m:Lbtw$b;
+
+    return-object v0
+.end method
+
+.method public final f()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "CREATE VIEW user_groups_view\n\tAS SELECT\n\t\tuser_groups._id AS _id,\n\t\tuser_groups.type AS user_groups_type,\n\t\tuser_groups.tag AS user_groups_tag,\n\t\tuser_groups.owner_id AS user_groups_owner_id,\n\t\tuser_groups.user_id AS user_groups_user_id,\n\t\tuser_groups.is_last AS user_groups_is_last,\n\t\tuser_groups.pc AS user_groups_pc,\n\t\tuser_groups.g_flags AS user_groups_g_flags,\n\t\tusers._id AS users__id,\n\t\tusers.user_id AS users_user_id,\n\t\tusers.username AS users_username,\n\t\tusers.name AS users_name,\n\t\tusers.image_url AS users_image_url,\n\t\tusers.user_flags AS users_user_flags,\n\t\tusers.is_profile_translatable AS users_is_profile_translatable,\n\t\tusers.friendship AS users_friendship,\n\t\tusers.friendship_time AS users_friendship_time,\n\t\tusers.are_dms_muted AS users_are_dms_muted,\n\t\tusers.is_active_creator AS users_is_active_creator,\n\t\tusers.profile_image_colors AS users_profile_image_colors,\n\t\tusers.has_nft_avatar AS users_has_nft_avatar,\n\t\tusers.is_blue_verified AS users_is_blue_verified,\n\t\tusers.user_label_data AS users_user_label_data,\n\t\tusers.verified_type AS users_verified_type,\n\t\tusers.super_followers_count AS users_super_followers_count,\n\t\tusers.blob_data AS users_blob_data,\n\t\tusers.has_twitter_articles AS users_has_twitter_articles,\n\t\tusers.verified_phone_status AS users_verified_phone_status,\n\t\tusers.is_graduated AS users_is_graduated,\n\t\tusers.header_url AS users_header_url,\n\t\tusers.description AS users_description,\n\t\tusers.link_color AS users_link_color,\n\t\tusers.web_url AS users_web_url,\n\t\tusers.url_entities AS users_url_entities,\n\t\tusers.bg_color AS users_bg_color,\n\t\tusers.extended_profile_fields AS users_extended_profile_fields,\n\t\tusers.location AS users_location,\n\t\tusers.structured_location AS users_structured_location,\n\t\tusers.followers AS users_followers,\n\t\tusers.fast_followers AS users_fast_followers,\n\t\tusers.friends AS users_friends,\n\t\tusers.statuses AS users_statuses,\n\t\tusers.favorites AS users_favorites,\n\t\tusers.media_count AS users_media_count,\n\t\tusers.profile_created AS users_profile_created,\n\t\tusers.updated AS users_updated,\n\t\tusers.pinned_tweet_id AS users_pinned_tweet_id,\n\t\tusers.advertiser_type AS users_advertiser_type,\n\t\tusers.hash AS users_hash,\n\t\tusers.translator_type AS users_translator_type,\n\t\tusers.profile_interstitial_type AS users_profile_interstitial_type,\n\t\tusers.profile_banner_colors AS users_profile_banner_colors,\n\t\tusers.withheld_info AS users_withheld_info,\n\t\tusers.tip_jar_settings AS users_tip_jar_settings,\n\t\tusers.smart_blocking_expiration AS users_smart_blocking_expiration,\n\t\tusers.professional AS users_professional\n\tFROM user_groups\n\tLEFT OUTER JOIN users AS users ON user_groups_user_id=users_user_id;"
+
+    return-object v0
+.end method
+
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "user_groups_view"
+
+    return-object v0
+.end method
+
+.method public final i()Ljava/util/Collection;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/lang/Class<",
+            "+",
+            "Liyp;",
+            ">;>;"
+        }
+    .end annotation
+
+    sget-object v0, Lbtw;->n:Lyvc$b;
+
+    return-object v0
+.end method

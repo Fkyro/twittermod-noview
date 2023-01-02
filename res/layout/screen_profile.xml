@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="?toolBarSize" android:layoutDirection="?forceLayoutDirection" app:menu="@menu/menu_help" app:navigationIcon="@drawable/ic_vector_arrow_left" app:title="@string/title_profile" style="?toolBarStyle" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.twitter.profiles.HeaderImageView android:id="@id/image_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip" app:defaultDrawable="@drawable/drawable_color_deep_gray" app:scaleType="fill">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black_opacity_50" android:importantForAccessibility="no" />
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/profile_camera_size" android:layout_height="@dimen/profile_camera_size" android:src="@drawable/ic_vector_camera_plus_stroke" android:contentDescription="@string/button_camera" app:tint="@color/white_opacity_85" />
+                </com.twitter.profiles.HeaderImageView>
+                <com.twitter.media.ui.image.UserImageView android:id="@id/image_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <include android:id="@id/field_email" layout="@layout/layout_item_two_line" />
+            <View style="@style/Divider" />
+            <include android:id="@id/field_bio" layout="@layout/layout_item_two_line" />
+            <View style="@style/Divider" />
+            <include android:id="@id/field_location" layout="@layout/layout_item_two_line" />
+            <View style="@style/Divider" />
+            <include android:id="@id/field_tfa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_8" android:layout_marginBottom="0.0dip" layout="@layout/layout_item_two_line" />
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="?coreColorSecondaryText" android:id="@id/text_tfa" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_two_factor_auth_summary" android:paddingStart="@dimen/space_16" android:paddingEnd="@dimen/space_16" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cont" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/_container" app:layout_constraintVertical_bias="1.0" style="@style/Text.Btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <tag android:value="Profile" android:id="@id/weaverComponent" />
+</ScrollView>

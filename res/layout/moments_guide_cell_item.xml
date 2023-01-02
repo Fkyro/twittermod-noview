@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_row_background" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/list_preferred_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/moments_guide_cell_item_core" style="@style/MomentsGuideItem.ListItem" />
+    <ViewStub android:id="@id/moments_cta_pivot_list_stub" android:layout="@layout/moments_guide_cta_pivot_list_item" android:inflatedId="@id/moments_cta_pivot_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/score_card_stub" android:layout="@layout/list_item_score_overlay" android:inflatedId="@id/score_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" style="@style/MomentsGuideItem.ListItem" />
+</LinearLayout>

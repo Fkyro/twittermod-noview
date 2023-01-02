@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:id="@id/nft_detail_explanation_title" android:paddingTop="@dimen/space_16" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nft_detail_explanation" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorSecondaryText" android:id="@id/nft_detail_explanation_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nft_detail_explanation_description" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textStyle="bold" android:textColor="@color/link" android:id="@id/nft_detail_learn_more" android:paddingTop="@dimen/space_12" android:paddingBottom="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nft_detail_learn_more" />
+</LinearLayout>

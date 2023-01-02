@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/space_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.button.legacy.TwitterButton android:id="@id/view_in_reader_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tweet_action_thread_reader_cta" style="@style/TwitterButtonLargeBrandOutlined" />
+    <tag android:value="com.twitter.tweetview.focal.ui.reader.ReaderModeEntryButtonTweetViewDelegateBinder" android:id="@id/viewBinder" />
+    <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+</FrameLayout>

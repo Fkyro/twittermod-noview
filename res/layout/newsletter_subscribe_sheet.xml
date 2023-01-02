@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:behavior_hideable="false" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.core.ui.components.dialog.bottomsheet.GripperView android:layout_gravity="center_horizontal" android:id="@id/gripper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_80" style="?android:progressBarStyle" />
+        <ViewFlipper android:id="@id/view_switcher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false">
+            <include android:id="@id/unsubscribed" layout="@layout/newsletter_subscribe_sheet_unsubscribed" />
+        </ViewFlipper>
+    </FrameLayout>
+    <tag android:value="NewsletterSubscribeSheet" android:id="@id/weaverComponent" />
+</LinearLayout>

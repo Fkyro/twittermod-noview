@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/recipient_search_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.twitter.dm.quickshare.ui.DMQuickShareRecipientSearch android:id="@id/recipient_search" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/collapsed_recipients" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DMRecipientSearch" />
+    </FrameLayout>
+    <include android:id="@id/search_container_divider" android:layout_width="fill_parent" android:layout_height="@dimen/space_1" layout="@layout/divider" />
+    <FrameLayout android:id="@id/recipients_container" android:background="?coreColorAppBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/quick_share_carousel_min_height">
+        <FrameLayout android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recipients" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:gravity="center" android:id="@id/empty_suggestions_warning" android:background="?coreColorAppBackground" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dm_quick_share_empty_suggestions" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:gravity="center" android:id="@id/group_selected_warning" android:background="?coreColorAppBackground" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_via_dm_add_participants_error" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+    </FrameLayout>
+</LinearLayout>

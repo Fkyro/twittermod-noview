@@ -1,0 +1,65 @@
+.class public final Lh9w$a;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lx9b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lh9w;-><init>(Lg8u;Lczr;Lut9;Ld7o;Ld7o;Lcpl;Lvwr;Lcom/twitter/util/user/UserIdentifier;Landroid/content/Context;J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lx9b<",
+        "Li0f$c;",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:Lh9w;
+
+
+# direct methods
+.method public constructor <init>(Lh9w;)V
+    .locals 0
+
+    iput-object p1, p0, Lh9w$a;->E0:Lh9w;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Li0f$c;
+
+    .line 2
+    iget-object p1, p0, Lh9w$a;->E0:Lh9w;
+
+    .line 3
+    invoke-virtual {p1}, Lh9w;->d()V
+
+    .line 4
+    sget-object p1, Lzvu;->a:Lzvu;
+
+    return-object p1
+.end method

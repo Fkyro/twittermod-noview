@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/dm_last_read_marker" android:paddingTop="@dimen/dm_last_read_marker_padding_top" android:paddingBottom="@dimen/dm_last_read_marker_padding_bottom" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dm_last_read_marker_padding_horizontal" android:paddingEnd="@dimen/dm_last_read_marker_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textStyle="bold" android:textColor="?coreColorSecondaryText" android:id="@id/dm_unread_messages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="@dimen/dm_last_read_marker_unread_messages_padding_horizontal" android:paddingEnd="@dimen/dm_last_read_marker_unread_messages_padding_horizontal" />
+    <View android:background="?coreColorTertiary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/dm_unread_messages" />
+    <View android:background="?coreColorTertiary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/dm_unread_messages" />
+</RelativeLayout>

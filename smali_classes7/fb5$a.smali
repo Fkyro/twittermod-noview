@@ -1,0 +1,83 @@
+.class public final Lfb5$a;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lx9b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfb5;-><init>(Laau;Lc1s;Lfb5$c;Lta7;Laue;Lj8b;Lz6d;Lv3i;Landroid/content/Context;Lae;Lh2s;Lj5s;Lbld;Lut9;Lh9w;Lncu;Lf15;Lvsd;Lc3l;Lcpl;Lwdt;Landroidx/fragment/app/p;Lgu4;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lx9b<",
+        "Li0f$b;",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:Lf15;
+
+.field public final synthetic F0:Lfb5;
+
+
+# direct methods
+.method public constructor <init>(Lf15;Lfb5;)V
+    .locals 0
+
+    iput-object p1, p0, Lfb5$a;->E0:Lf15;
+
+    iput-object p2, p0, Lfb5$a;->F0:Lfb5;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Li0f$b;
+
+    const-string v0, "it"
+
+    .line 2
+    invoke-static {p1, v0}, Lahd;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object p1, p0, Lfb5$a;->E0:Lf15;
+
+    .line 4
+    iget-object p1, p1, Lf15;->a:Lu2l;
+
+    .line 5
+    iget-object v0, p0, Lfb5$a;->F0:Lfb5;
+
+    .line 6
+    iget-object v0, v0, Lcau;->H0:Lcom/twitter/util/user/UserIdentifier;
+
+    .line 7
+    invoke-virtual {p1, v0}, Lu2l;->onNext(Ljava/lang/Object;)V
+
+    .line 8
+    sget-object p1, Lzvu;->a:Lzvu;
+
+    return-object p1
+.end method

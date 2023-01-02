@@ -1,0 +1,165 @@
+.class public final Lyc5$c;
+.super Lp5r;
+.source "Twttr"
+
+# interfaces
+.implements Lmab;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lyc5;->a(Led5;Lbd5;Lcom/twitter/communities/settings/rules/create/CommunityCreateRuleViewModel;Lt16;II)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lp5r;",
+        "Lmab<",
+        "Lks6;",
+        "Lgk6<",
+        "-",
+        "Lzvu;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lxx7;
+    c = "com.twitter.communities.settings.rules.create.CommunityCreateRuleContentViewProviderKt$CreateRulePage$1"
+    f = "CommunityCreateRuleContentViewProvider.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field public final synthetic F0:Led5;
+
+.field public final synthetic G0:Lmiq;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lmiq<",
+            "Ldd5;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Led5;Lmiq;Lgk6;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Led5;",
+            "Lmiq<",
+            "Ldd5;",
+            ">;",
+            "Lgk6<",
+            "-",
+            "Lyc5$c;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lyc5$c;->F0:Led5;
+
+    iput-object p2, p0, Lyc5$c;->G0:Lmiq;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, Lp5r;-><init>(ILgk6;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lgk6;)Lgk6;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lgk6<",
+            "*>;)",
+            "Lgk6<",
+            "Lzvu;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Lyc5$c;
+
+    iget-object v0, p0, Lyc5$c;->F0:Led5;
+
+    iget-object v1, p0, Lyc5$c;->G0:Lmiq;
+
+    invoke-direct {p1, v0, v1, p2}, Lyc5$c;-><init>(Led5;Lmiq;Lgk6;)V
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Lpex;->v0(Ljava/lang/Object;)V
+
+    .line 2
+    iget-object p1, p0, Lyc5$c;->F0:Led5;
+
+    iget-object v0, p0, Lyc5$c;->G0:Lmiq;
+
+    .line 3
+    invoke-interface {v0}, Lmiq;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ldd5;
+
+    .line 4
+    invoke-virtual {v0}, Ldd5;->b()Z
+
+    move-result v0
+
+    .line 5
+    iput-boolean v0, p1, Led5;->F0:Z
+
+    .line 6
+    iget-object p1, p1, Led5;->E0:Landroid/app/Activity;
+
+    invoke-virtual {p1}, Landroid/app/Activity;->invalidateOptionsMenu()V
+
+    .line 7
+    sget-object p1, Lzvu;->a:Lzvu;
+
+    return-object p1
+.end method
+
+.method public final y0(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lks6;
+
+    check-cast p2, Lgk6;
+
+    invoke-virtual {p0, p1, p2}, Lyc5$c;->create(Ljava/lang/Object;Lgk6;)Lgk6;
+
+    move-result-object p1
+
+    check-cast p1, Lyc5$c;
+
+    sget-object p2, Lzvu;->a:Lzvu;
+
+    invoke-virtual {p1, p2}, Lyc5$c;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p2
+.end method

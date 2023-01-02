@@ -1,0 +1,38 @@
+.class public abstract Lrg1$b;
+.super Leo2;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lrg1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Lrg1;",
+        "B:",
+        "Lrg1$a<",
+        "TE;TB;>;>",
+        "Leo2<",
+        "TE;TB;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Leo2;-><init>(I)V
+
+    return-void
+.end method

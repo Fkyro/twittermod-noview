@@ -1,0 +1,163 @@
+.class public final Lqni$b;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source "Twttr"
+
+# interfaces
+.implements Leqi;
+.implements Lzm8;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lqni;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicReference<",
+        "Lzm8;",
+        ">;",
+        "Leqi<",
+        "TR;>;",
+        "Lzm8;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final E0:Leqi;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Leqi<",
+            "-TR;>;"
+        }
+    .end annotation
+.end field
+
+.field public F0:Lzm8;
+
+
+# direct methods
+.method public constructor <init>(Leqi;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Leqi<",
+            "-TR;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lqni$b;->E0:Leqi;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqni$b;->F0:Lzm8;
+
+    invoke-interface {v0}, Lzm8;->dispose()V
+
+    .line 2
+    invoke-static {p0}, Lhn8;->b(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    return-void
+.end method
+
+.method public final isDisposed()Z
+    .locals 1
+
+    iget-object v0, p0, Lqni$b;->F0:Lzm8;
+
+    invoke-interface {v0}, Lzm8;->isDisposed()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final onComplete()V
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lhn8;->b(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 2
+    iget-object v0, p0, Lqni$b;->E0:Leqi;
+
+    invoke-interface {v0}, Leqi;->onComplete()V
+
+    return-void
+.end method
+
+.method public final onError(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lhn8;->b(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    .line 2
+    iget-object v0, p0, Lqni$b;->E0:Leqi;
+
+    invoke-interface {v0, p1}, Leqi;->onError(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public final onNext(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TR;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lqni$b;->E0:Leqi;
+
+    invoke-interface {v0, p1}, Leqi;->onNext(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final onSubscribe(Lzm8;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqni$b;->F0:Lzm8;
+
+    invoke-static {v0, p1}, Lhn8;->p(Lzm8;Lzm8;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iput-object p1, p0, Lqni$b;->F0:Lzm8;
+
+    .line 3
+    iget-object p1, p0, Lqni$b;->E0:Leqi;
+
+    invoke-interface {p1, p0}, Leqi;->onSubscribe(Lzm8;)V
+
+    :cond_0
+    return-void
+.end method

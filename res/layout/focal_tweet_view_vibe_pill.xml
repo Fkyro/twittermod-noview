@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/vibe_pill_layout" layout="@layout/vibe_pill" />
+    <tag android:value="com.twitter.tweetview.core.ui.vibe.FocalTweetViewVibePillViewDelegateBinder" android:id="@id/viewBinder" />
+    <tag android:value="FocalTweetViewVibePill" android:id="@id/viewBinderNamed" />
+    <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.tweet.inlineactions.InlineActionBar android:theme="@style/InlineActionEdgeToEdgeTheme" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.tweet.inlineactions.InlineActionView android:id="@id/inline_like" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconPaddingNormal="0.0dip" style="@style/InlineActionView.Like" />
+    <com.twitter.ui.tweet.inlineactions.InlineActionView android:id="@id/inline_retweet" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconPaddingNormal="0.0dip" style="@style/InlineActionView.Retweet" />
+    <com.twitter.ui.tweet.inlineactions.InlineActionView android:id="@id/inline_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconPaddingNormal="0.0dip" style="@style/InlineActionView.Reply" />
+    <com.twitter.ui.tweet.inlineactions.InlineActionView android:id="@id/inline_twitter_share" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconPaddingNormal="0.0dip" style="@style/InlineActionView.TwitterShare" />
+</com.twitter.ui.tweet.inlineactions.InlineActionBar>

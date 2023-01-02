@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/space_16" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_xsmall" android:textColor="@color/gray_700" android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_8" android:text="@string/composer_collaboration_collaborating_with" android:maxLines="@integer/single_line" />
+    <androidx.cardview.widget.CardView android:id="@id/composer_collaborator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:animateLayoutChanges="true" app:cardBackgroundColor="?coreColorElevatedBackground" app:cardCornerRadius="@dimen/corner_radius_infinite">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/space_8">
+            <com.twitter.media.ui.image.UserImageView android:id="@id/collaborator_profile_image" android:layout_width="@dimen/space_20" android:layout_height="@dimen/space_20" android:layout_margin="@dimen/space_8" android:importantForAccessibility="no" app:userImageSize="@dimen/space_20" />
+            <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textStyle="bold" android:textColor="?toolbarTitleColor" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/collaborator_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="@integer/single_line" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/button_dismiss_collab" android:background="?selectableItemBackground" android:padding="@dimen/space_8" android:layout_width="@dimen/space_48" android:layout_height="@dimen/space_36" android:src="@drawable/ic_vector_close" android:tint="@color/gray_700" android:contentDescription="@string/a11y_composer_collaboration_dismiss" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <tag android:value="ComposerCollab" android:id="@id/weaverComponent" />
+</LinearLayout>

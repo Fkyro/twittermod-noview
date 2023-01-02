@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/vibe_composer_item_view" android:background="@drawable/vibe_composer_pill_background" android:paddingLeft="@dimen/vibe_composer_padding_horizontal" android:paddingTop="@dimen/vibe_composer_padding_vertical" android:paddingRight="@dimen/vibe_composer_padding_horizontal" android:paddingBottom="@dimen/vibe_composer_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.media.ui.fresco.FrescoMediaImageView android:layout_gravity="center_vertical" android:id="@id/icon_image_view" android:visibility="gone" android:layout_width="@dimen/vibe_composer_icon_image_size" android:layout_height="@dimen/vibe_composer_icon_image_size" android:contentDescription="@null" android:layout_marginEnd="@dimen/vibe_composer_icon_image_margin_end" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/vibe_composer_text" android:textStyle="bold" android:textColor="?dynamicColorGray900" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/vibe_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/composer_vibe_button_text" android:maxLines="@integer/vibe_pill_lines" />
+    <tag android:value="VibeComposerItemView" android:id="@id/weaverComponent" />
+</LinearLayout>

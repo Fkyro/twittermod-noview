@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/top_toolbar" android:layout_width="fill_parent" android:layout_height="?toolBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/ocf_subtask_top_toolbar" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top_toolbar" style="@style/OcfTitle3Text" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ocf_standard_spacing" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/primary_text" style="@style/OcfBodyText" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="parent" layout="@layout/bottom_cta_navigation_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

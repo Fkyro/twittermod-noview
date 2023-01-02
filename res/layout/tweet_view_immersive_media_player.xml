@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/tweet_view_constraint_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/video_container" android:layout="@layout/tweet_immersive_video_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <tag android:value="com.twitter.explore.immersive.ui.stub.VideoTweetViewStubDelegateBinder" android:id="@id/viewBinder" />
+        <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+    </ViewStub>
+    <com.twitter.tweetview.core.TweetViewContentHostContainer android:id="@id/card_media_tweet_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?tweetViewTweetViewContentHostContainer">
+        <tag android:value="ImmersiveContentHostContainer" android:id="@id/weaverComponent" />
+    </com.twitter.tweetview.core.TweetViewContentHostContainer>
+    <ImageView android:visibility="gone" android:layout_width="@dimen/heart_icon_size" android:layout_height="@dimen/heart_icon_size" android:src="@drawable/ic_vector_heart" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/white">
+        <tag android:value="com.twitter.tweetview.core.ui.doubletapheart.DoubleTapHeartViewDelegateBinder" android:id="@id/viewBinder" />
+        <tag android:value="ExploreImmersiveViewDoubleTapHeart" android:id="@id/viewBinderNamed" />
+        <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+    </ImageView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/chrome" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_horizontal_30" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.3" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_horizontal_50" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_vertical_50" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_horizontal_60" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.6" />
+        <View android:background="@drawable/immersive_tweet_drop_shadow_top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_30" app:layout_constraintTop_toTopOf="parent" />
+        <View android:background="@drawable/immersive_tweet_drop_shadow_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_horizontal_60" />
+        <ViewStub android:layout="@layout/tweet_expand_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <tag android:value="com.twitter.explore.immersive.ui.overlay.ExpandOverlayViewStubDelegateBinder" android:id="@id/viewBinder" />
+            <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+        </ViewStub>
+        <include android:id="@id/tweet_header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tweet_avatar_start_margin" android:layout_marginRight="@dimen/tweet_avatar_start_margin" android:layout_marginBottom="@dimen/space_4" app:layout_constraintBottom_toTopOf="@id/tweet_content_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/tweet_header_layout" />
+        <com.twitter.ui.widget.TextContentView android:id="@id/tweet_content_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tweet_avatar_start_margin" android:layout_marginRight="@dimen/tweet_avatar_start_margin" app:layout_constraintBottom_toTopOf="@id/tweet_inline_actions" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="?tweetViewContentStyle">
+            <tag android:value="com.twitter.explore.immersive.ui.textcontent.ImmersiveTextContentViewDelegateBinder" android:id="@id/viewBinder" />
+            <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+        </com.twitter.ui.widget.TextContentView>
+        <com.twitter.ui.view.AsyncView android:id="@id/tweet_inline_actions" android:layout_width="0.0dip" android:layout_height="@dimen/inline_action_height" android:layout_marginLeft="@dimen/tweet_avatar_start_margin" android:layout_marginRight="@dimen/tweet_avatar_start_margin" android:layout_marginBottom="@dimen/space_4" android:importantForAccessibility="noHideDescendants" app:layout="@layout/main_edge_to_edge_inline_actions" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintBottom_toTopOf="@id/slideup_onboarding_viewstub" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <tag android:value="InlineActionBar" android:id="@id/weaverComponent" />
+        </com.twitter.ui.view.AsyncView>
+        <com.twitter.explore.immersive.ImmersiveVideoScrubberControlView android:id="@id/seekbar" android:layout_width="0.0dip" android:layout_height="0.0dip" android:importantForAccessibility="no" app:layout_constraintBottom_toTopOf="@id/tweet_header" app:layout_constraintEnd_toStartOf="@id/video_mute_toggle" app:layout_constraintStart_toEndOf="@id/video_play_toggle" app:layout_constraintTop_toTopOf="@id/video_play_toggle" style="?android:progressBarStyleHorizontal">
+            <tag android:value="com.twitter.explore.immersive.ui.progressbar.VideoProgressBarViewDelegateBinder" android:id="@id/viewBinder" />
+            <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+        </com.twitter.explore.immersive.ImmersiveVideoScrubberControlView>
+        <include android:id="@id/video_mute_toggle" android:layout_width="@dimen/immersive_explore_curation_action_size" android:layout_height="@dimen/immersive_explore_curation_action_size" app:layout_constraintBottom_toTopOf="@id/tweet_header" app:layout_constraintEnd_toEndOf="@id/tweet_header" layout="@layout/video_mute_toggle" />
+        <include android:id="@id/video_play_toggle" android:layout_width="@dimen/immersive_explore_curation_action_size" android:layout_height="@dimen/immersive_explore_curation_action_size" app:layout_constraintBottom_toTopOf="@id/tweet_header" app:layout_constraintStart_toStartOf="@id/tweet_header" layout="@layout/video_play_toggle" />
+        <tag android:value="com.twitter.explore.immersive.ui.chrome.ImmersiveChromeViewDelegateBinder" android:id="@id/viewBinder" />
+        <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+        <ViewStub android:id="@id/slideup_onboarding_viewstub" android:layout="@layout/slideup_onboarding" android:inflatedId="@id/slideup_onboarding_viewstub" android:layout_width="fill_parent" android:layout_height="@dimen/space_56" app:layout_constraintBottom_toBottomOf="parent" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/seekbar" style="@style/ImmersiveError">
+            <tag android:value="com.twitter.explore.immersive.ui.error.ImmersiveErrorViewDelegateBinder" android:id="@id/viewBinder" />
+            <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+        </com.twitter.ui.components.text.legacy.TypefacesTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+    <tag android:value="TweetViewImmersiveViewDelegateBinder" android:id="@id/viewBinderNamed" />
+    <tag android:value="com.twitter.tweetview.core.ui.TweetViewViewDelegateBinder" android:id="@id/viewBinder" />
+</merge>

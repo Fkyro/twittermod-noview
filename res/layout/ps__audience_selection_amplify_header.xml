@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/text_row_container" android:background="?android:selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.periscope.android.view.PsImageView android:id="@id/icon" android:background="@drawable/ps__bg_audience_icon_grey" android:padding="2.0dip" android:layout_width="@dimen/ps__avatar_size" android:layout_height="@dimen/ps__avatar_size" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ps__standard_spacing_16" android:layout_marginEnd="@dimen/ps__standard_spacing_16" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/caret" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/ps__large_margin" android:src="@drawable/ps__tooltip_triangle" android:adjustViewBounds="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/caret" android:layout_toEndOf="@id/icon">
+        <tv.periscope.android.view.PsTextView android:textSize="16.0sp" android:textColor="@color/ps__primary_text" android:ellipsize="middle" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <tv.periscope.android.view.PsTextView android:textSize="12.0sp" android:textColor="@color/ps__secondary_text" android:id="@id/secondary_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

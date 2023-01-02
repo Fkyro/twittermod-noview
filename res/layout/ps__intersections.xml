@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/intersections_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <tv.periscope.android.view.avatars.AvatarsView android:id="@id/intersections_avatars" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:avatarSize="@dimen/ps__intersections_avatar_size" custom:maxAvatarCount="3" />
+    <tv.periscope.android.view.PsTextView android:textSize="@dimen/font_size_small" android:textColor="@color/gray_700" android:layout_gravity="center_vertical" android:id="@id/intersections_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ps__standard_spacing_8" />
+</LinearLayout>

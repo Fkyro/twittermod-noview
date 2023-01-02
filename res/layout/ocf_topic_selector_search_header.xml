@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_12" android:paddingEnd="@dimen/space_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" style="@style/OcfTitle3Text" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/header_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_12" style="@style/OcfBodyText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_12">
+        <com.twitter.ui.widget.TwitterEditText android:textColor="?coreColorPrimaryText" android:textColorHint="?coreColorSecondaryText" android:layout_gravity="center_vertical" android:id="@id/topic_search" android:background="@drawable/round_input_box_background" android:layout_width="0.0dip" android:layout_height="?android:listPreferredItemHeightSmall" android:maxLines="1" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionDone|flagNoExtractUi" android:drawableStart="@drawable/ic_search_hint_dark" android:paddingStart="@dimen/space_12" android:paddingEnd="@dimen/space_12" />
+        <com.twitter.ui.components.button.legacy.TwitterButton android:layout_gravity="center" android:id="@id/search_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TimelineMessageSecondaryAction" />
+    </LinearLayout>
+</LinearLayout>

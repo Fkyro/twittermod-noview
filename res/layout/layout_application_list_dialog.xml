@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.widget.TwitterEditText android:textSize="@dimen/font_size_body" android:textColor="?coreColorSecondaryText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textMultiLine" android:paddingStart="@dimen/space_24" android:paddingEnd="@dimen/space_24" app:underlineStyle="@null" style="@style/TwitterEditText.NoPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

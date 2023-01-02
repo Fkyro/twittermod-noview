@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cc_toggle_background" android:background="@drawable/timeline_bg_audio_toggle_button" android:visibility="gone" android:layout_width="@dimen/cc_toggle_button_bg_size" android:layout_height="@dimen/cc_toggle_button_bg_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/cc_toggle_button" android:visibility="gone" android:layout_width="@dimen/cc_toggle_button_width" android:layout_height="@dimen/cc_toggle_button_height" android:scaleType="centerInside" android:contentDescription="@string/cc_toggle_button_description" />
+</FrameLayout>

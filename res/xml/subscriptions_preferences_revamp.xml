@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.feature.subscriptions.ui.preference.TwitterBluePreferenceCategory android:key="twitter_blue_header" />
+    <com.twitter.ui.widget.TwitterPreferenceCategory android:title="@string/feature_settings_category_title_revamp" android:key="feature_settings_category" twitter:allowDividerAbove="false" twitter:allowDividerBelow="false">
+        <Preference android:icon="@drawable/ic_vector_flask_stroke" android:title="@string/labs_pref_title" android:key="labs_settings" android:summary="@string/labs_pref_summary" />
+    </com.twitter.ui.widget.TwitterPreferenceCategory>
+    <com.twitter.ui.widget.TwitterPreferenceCategory android:title="@string/ad_free_articles_category_title_revamp" android:key="ad_free_articles_category" twitter:allowDividerAbove="false" twitter:allowDividerBelow="false">
+        <Preference android:icon="@drawable/ic_vector_no" android:title="@string/ad_free_articles_sites" android:key="ad_free_articles_sites" android:summary="@string/ad_free_articles_sites_summary" />
+        <Preference android:icon="@drawable/ic_vector_bar_chart_horizontal" android:title="@string/ad_free_articles_impact" android:key="ad_free_articles_impact" android:summary="@string/ad_free_articles_impact_summary" />
+        <Preference android:title="@string/ad_free_article_help" android:key="ad_free_articles_help" />
+    </com.twitter.ui.widget.TwitterPreferenceCategory>
+    <com.twitter.ui.widget.TwitterPreferenceCategory android:title="@string/subscription_title" twitter:allowDividerAbove="false" twitter:allowDividerBelow="false">
+        <Preference android:icon="@drawable/ic_vector_creditcard_back" android:title="@string/manage_subscription" android:key="manage_subscription" android:summary="@string/manage_subscription_pref_summary" />
+        <Preference android:title="@string/subscriptions_help_center_label" android:key="help_center" />
+        <Preference android:title="@string/subscriptions_support_label" android:key="get_support" />
+    </com.twitter.ui.widget.TwitterPreferenceCategory>
+    <com.twitter.feature.subscriptions.ui.preference.ExploreFeaturesPreferenceCategory android:key="explore_features_category" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hide_tweet_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.button.legacy.TwitterButton android:id="@id/hide_tweet_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preemptive_second_degree_nudge_hide_reply" style="@style/TwitterButtonSmallBrandOutlined" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/hide_tweet_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleSmall" />
+</FrameLayout>

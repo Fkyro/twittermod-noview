@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:textAlignment="center" android:paddingStart="@dimen/space_12" android:paddingEnd="@dimen/space_12" style="@style/OcfTitle3Text" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:id="@id/header_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_12" android:textAlignment="center" android:paddingStart="@dimen/space_12" android:paddingEnd="@dimen/space_12" style="@style/OcfBodyText" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/grouped_row_view_gap_size" android:layout_marginTop="@dimen/space_12" android:layout_marginBottom="@dimen/space_12" style="@style/HorizontalRule" />
+</LinearLayout>

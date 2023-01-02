@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twitter="http://schemas.android.com/apk/res-auto">
+    <com.twitter.settings.widget.LinkablePreference android:key="description_preferences" twitter:clickableUrl="@string/tweet_settings_help_text_learn_more" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/settings_badge_title" android:key="launcher_icon_badge_enabled" android:summary="@string/settings_badge_summary" android:defaultValue="true" />
+    <Preference android:title="@string/settings_push_notifications_title" android:key="push_notifications" />
+    <Preference android:title="@string/settings_sms_notifications_title" android:key="sms_notifications" />
+    <Preference android:title="@string/settings_email_notifications_title" android:key="email_notifications" android:summary="@string/settings_email_notifications_summary" />
+</PreferenceScreen>

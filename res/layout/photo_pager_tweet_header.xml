@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/TweetView.Gallery" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/bg_gallery_tweet_header_top_shadow" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/bottom_barrier" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/bottom_barrier" android:layout_width="fill_parent" android:layout_height="wrap_content" app:barrierDirection="bottom" app:barrierMargin="@dimen/space_8" app:constraint_referenced_ids="tweet_profile_image,tweet_header" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/top_guideline_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintGuide_begin="?toolBarSize" />
+    <com.twitter.media.ui.image.UserImageView android:id="@id/tweet_profile_image" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:layout_marginStart="@dimen/space_12" android:layout_marginEnd="@dimen/image_margin_end" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/top_guideline_content" app:userImageSize="@dimen/medium_user_image_size" style="?tweetViewProfileImageStyle">
+        <tag android:value="RingedUserImage" android:id="@id/weaverComponent" />
+    </com.twitter.media.ui.image.UserImageView>
+    <com.twitter.ui.tweet.TweetHeaderView android:id="@id/tweet_header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/tweet_avatar_start_margin" android:layout_marginEnd="@dimen/space_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tweet_profile_image" app:layout_constraintTop_toTopOf="@id/tweet_profile_image" app:shouldStackUsername="true" app:timestampNextToUsername="false" style="?tweetViewHeaderStyle">
+        <tag android:value="com.twitter.tweetview.core.ui.tweetheader.TweetHeaderGalleryViewDelegateBinder" android:id="@id/viewBinder" />
+        <tag android:value="com.twitter.tweetview.core.TweetViewViewModel" android:id="@id/viewModel" />
+    </com.twitter.ui.tweet.TweetHeaderView>
+</androidx.constraintlayout.widget.ConstraintLayout>

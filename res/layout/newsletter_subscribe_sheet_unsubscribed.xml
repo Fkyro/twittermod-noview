@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_16" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textStyle="bold" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subscribe_to_newsletter_title" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textColor="?coreColorSecondaryText" android:id="@id/subscribe_disclaimer" android:paddingTop="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.twitter.ui.components.button.compose.HorizonComposeButton android:id="@id/confirm_your_subscription_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_16" android:text="@string/newsletter_subscribe_action" style="@style/TwitterButtonMediumPrimaryFilled" />
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_small" android:textColor="@color/destructive_red" android:layout_gravity="center" android:id="@id/error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/revue_subscription_error_message" android:drawablePadding="@dimen/space_8" android:drawableStart="@drawable/ic_vector_error_circle_fill_red_white_tint" />
+    <com.twitter.ui.components.button.compose.HorizonComposeButton android:id="@id/read_sample_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/read_sample_issue_action" style="@style/TwitterButtonMediumPrimaryOutlined" />
+</LinearLayout>

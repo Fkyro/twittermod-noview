@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/implicit_topic_tweet_prompt_background" android:padding="@dimen/space_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorPrimaryText" android:id="@id/implicit_topic_tweet_prompt_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginEnd="@dimen/space_48" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/implicit_topic_tweet_prompt_follow_toggle_button" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.twitter.ui.components.button.legacy.ToggleTwitterButton android:id="@id/implicit_topic_tweet_prompt_follow_toggle_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:contentDescription="@string/are_following" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toTopOf="parent" app:shouldToggleOnClick="true" style="@style/TweetTopicPromptToggleTwitterButton" />
+    <tag android:value="com.twitter.weaver.base.WeaverViewDelegateBinder" android:id="@id/viewBinder" />
+    <tag android:value="com.twitter.subsystems.interests.ui.topics.implicitprompt.ImplicitTopicPromptViewModel" android:id="@id/viewModel" />
+    <tag android:value="implicit_topic_prompt_view" android:id="@id/viewBinderNamed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

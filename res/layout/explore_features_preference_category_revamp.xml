@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twitter.ui.components.text.legacy.TypefacesTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subscriptions_explore_features_title_revamp" style="@style/PreferenceCategoryVDLHeaderStyle" />
+    <com.twitter.feature.subscriptions.ui.carousel.SubscriptionsFeatureCarousel android:id="@id/features_carousel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:carouselLocation="SUBSCRIPTIONS_SETTINGS" />
+</LinearLayout>

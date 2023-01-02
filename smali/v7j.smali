@@ -1,0 +1,29 @@
+.class public final Lv7j;
+.super Ljava/lang/Object;
+.source "Twttr"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lv7j$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lv7j$a;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lv7j$a;
+
+    invoke-direct {v0}, Lv7j$a;-><init>()V
+
+    sput-object v0, Lv7j;->Companion:Lv7j$a;
+
+    return-void
+.end method

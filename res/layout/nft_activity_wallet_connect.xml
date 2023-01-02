@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_24" android:layout_marginBottom="@dimen/space_24" android:animateLayoutChanges="true">
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_jumbo" android:textStyle="bold" android:textColor="?coreColorPrimaryText" android:id="@id/nft_choose_wallet_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nft_choose_wallet_title" android:paddingStart="@dimen/space_28" android:paddingEnd="@dimen/space_28" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/nft_qr" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/space_24" android:contentDescription="@string/qr_code" android:layout_marginStart="@dimen/space_28" android:layout_marginEnd="@dimen/space_28" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nft_choose_wallet_title" app:layout_constraintVertical_bias="0.3" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/nft_choose_wallet_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_24" app:layout_constraintTop_toBottomOf="@id/nft_choose_wallet_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.twitter.ui.view.TwitterSafeDefaultsWebView android:id="@id/nft_webview" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <tag android:value="NftWalletConnectMain" android:id="@id/weaverComponent" />
+</FrameLayout>

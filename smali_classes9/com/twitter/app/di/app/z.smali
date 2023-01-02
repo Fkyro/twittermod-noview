@@ -1,0 +1,144 @@
+.class public final Lcom/twitter/app/di/app/z;
+.super Ljava/lang/Object;
+.source "Twttr"
+
+# interfaces
+.implements Lyk7$b;
+
+
+# instance fields
+.field public final synthetic a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/view/View;)Lyk7;
+    .locals 11
+
+    new-instance v10, Lyk7;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->H:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lgo7;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->I:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ly0f;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->J:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Ljji;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->K:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lhld$a;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->i1:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lbld;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->h:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lcpl;
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->H0:Lcom/twitter/app/di/app/DaggerTwApplOG$si;
+
+    invoke-static {v0}, Lcom/twitter/app/di/app/DaggerTwApplOG$si;->I2(Lcom/twitter/app/di/app/DaggerTwApplOG$si;)Landroidx/fragment/app/p;
+
+    move-result-object v8
+
+    iget-object v0, p0, Lcom/twitter/app/di/app/z;->a:Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$si$a;->E0:Lcom/twitter/app/di/app/DaggerTwApplOG$z01;
+
+    iget-object v0, v0, Lcom/twitter/app/di/app/DaggerTwApplOG$z01;->g4:Ll1l;
+
+    invoke-interface {v0}, Ll1l;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v9, v0
+
+    check-cast v9, Lfis;
+
+    move-object v0, v10
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v9}, Lyk7;-><init>(Landroid/view/View;Lgo7;Ly0f;Ljji;Lhld$a;Lbld;Lcpl;Landroidx/fragment/app/p;Lfis;)V
+
+    return-object v10
+.end method

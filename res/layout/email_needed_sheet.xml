@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/email_needed_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/twitter_bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_16" android:layout_marginRight="@dimen/space_16" android:layout_marginBottom="@dimen/space_16">
+        <com.twitter.core.ui.components.dialog.bottomsheet.GripperView android:layout_gravity="center_horizontal" android:id="@id/gripper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_xlarge" android:textColor="?coreColorPrimaryText" android:id="@id/email_needed_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/newsletter_email_needed_title" />
+        <com.twitter.ui.components.text.legacy.TypefacesTextView android:textSize="@dimen/font_size_normal" android:textColor="?coreColorSecondaryText" android:id="@id/email_needed_description" android:paddingTop="@dimen/space_8" android:paddingBottom="@dimen/space_16" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.twitter.ui.components.button.compose.HorizonComposeButton android:id="@id/go_to_revue_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/go_to_revue_action" style="@style/TwitterButtonMediumPrimaryFilled" />
+    </LinearLayout>
+    <tag android:value="EmailNeededSheet" android:id="@id/weaverComponent" />
+</androidx.core.widget.NestedScrollView>

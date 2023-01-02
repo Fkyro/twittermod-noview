@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twitter.ui.widget.NestedCoordinatorLayout android:id="@id/nested_coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/fleetline_app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TwitterAppBar">
+        <FrameLayout android:id="@id/fleetline_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/timeline_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/timeline_pinned_header" />
+        <ViewStub android:id="@id/loading_new_tweets_component" android:layout="@layout/loading_new_tweets_component" android:inflatedId="@id/loading_new_tweets_component" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:visibility="gone" layout="@layout/new_item_banner" />
+        <ViewStub android:id="@id/empty_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.twitter.ui.widget.NestedCoordinatorLayout>

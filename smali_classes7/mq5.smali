@@ -1,0 +1,79 @@
+.class public final Lmq5;
+.super Lsbe;
+.source "Twttr"
+
+# interfaces
+.implements Lmab;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsbe;",
+        "Lmab<",
+        "Lt16;",
+        "Ljava/lang/Integer;",
+        "Lzvu;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic E0:Lcom/twitter/communities/profilemodule/CommunitySpotlightModuleViewModel;
+
+.field public final synthetic F0:Lhq5;
+
+.field public final synthetic G0:I
+
+.field public final synthetic H0:I
+
+
+# direct methods
+.method public constructor <init>(Lcom/twitter/communities/profilemodule/CommunitySpotlightModuleViewModel;Lhq5;II)V
+    .locals 0
+
+    iput-object p1, p0, Lmq5;->E0:Lcom/twitter/communities/profilemodule/CommunitySpotlightModuleViewModel;
+
+    iput-object p2, p0, Lmq5;->F0:Lhq5;
+
+    iput p3, p0, Lmq5;->G0:I
+
+    iput p4, p0, Lmq5;->H0:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lsbe;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final y0(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    check-cast p1, Lt16;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 1
+    iget-object p2, p0, Lmq5;->E0:Lcom/twitter/communities/profilemodule/CommunitySpotlightModuleViewModel;
+
+    iget-object v0, p0, Lmq5;->F0:Lhq5;
+
+    iget v1, p0, Lmq5;->G0:I
+
+    or-int/lit8 v1, v1, 0x1
+
+    iget v2, p0, Lmq5;->H0:I
+
+    invoke-static {p2, v0, p1, v1, v2}, Lpq5;->c(Lcom/twitter/communities/profilemodule/CommunitySpotlightModuleViewModel;Lhq5;Lt16;II)V
+
+    .line 2
+    sget-object p1, Lzvu;->a:Lzvu;
+
+    return-object p1
+.end method
