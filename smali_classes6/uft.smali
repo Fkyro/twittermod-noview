@@ -61,6 +61,8 @@
 
     move/from16 v3, p3
 
+    #disable view
+
     const-wide/16 v4, 0x0
 
     .line 3
